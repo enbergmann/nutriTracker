@@ -1,0 +1,25 @@
+Part 1: Saving ingredients
+
+AC01: Base ingredients can be added along with their nutrients for 100g
+AC01a: Data is saved in a csv file of all ingredients
+AC01b: A new ingredient can be added manually in a suitable format
+AC01c: Research: The data for adding a new ingredient manually can be created
+       automatically via some data base
+AC02: Recepies can be added along with their base ingredients and the
+      respective amounts
+AC02a: Recepies are saved in another csv file
+AC02b: Recepies are added manually in a suitable format
+
+
+Part 2: Implementing the food tracker
+
+: Base ingredients can be edited
+: Loading recepies loads their ingredients, which can then be editet further
+
+
+
+
+
+
+
+
