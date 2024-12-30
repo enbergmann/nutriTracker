@@ -1,0 +1,29 @@
+Class Food.
+Have fields for all the nutrients, e.g. o_food.protein and o_food.vitaminB12.
+Has field for all ingredients, i.e., list of Food objects that create o_food
+  - this list can be empty, which makes the food a base ingredient which 
+    should be in the ingredients csv
+  - should be adaptable 
+
+Base ingredients have to be complete and at least entered manually (somehow note
+sourcs with URL or such).
+Any food that has non-empty ingredients list has its nutrition information
+automatically calculted from its ingredients.
+
+Constructor:
+Base ingredient: Food(String name, Dict <key, value> = <nutrient, amount>)
+  where non-mentioned nutrients get a flag that is interpreted as 0 but makes
+  it clear that it was not provided
+  - Should check against existing base ingredients and warn if it already exists
+    and ask if update is wanted or state that different name is needed
+Foods made from ingredients: Food(String name, list of ingredients (Food objects))
+
+Food object hirarchy:
+o_day is Food object whose ingredients are meals.
+o_meal has ingredients of foods
+o_food has ingredients of base ingredients
+
+
+
+
+
